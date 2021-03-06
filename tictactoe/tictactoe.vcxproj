@@ -144,9 +144,11 @@
   <ItemGroup>
     <ClCompile Include="board.c" />
     <ClCompile Include="gui.c" />
+    <ClCompile Include="ai.c" />
     <ClCompile Include="tictactoe.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ai.h" />
     <ClInclude Include="board.h" />
     <ClInclude Include="gui.h" />
   </ItemGroup>

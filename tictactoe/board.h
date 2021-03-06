@@ -21,4 +21,5 @@ void empty_board(board* b);
 piece get_winner(board* b);
 int is_game_over(board* b, piece* winner);
 int put_move(board* b, int x, int y);
+void cpy_board(board* src, board* dest);
 void start_game(board* b);

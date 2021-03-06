@@ -53,6 +53,18 @@ int put_move(board* b, int x, int y)
 	return 0;
 }
 
+void cpy_board(board* src, board* dest)
+{
+	for (int y = 0; y < HEIGHT; y++)
+	{
+		for (int x = 0; x < WIDTH; x++)
+		{
+			dest->state[y][x] = src->state[y][x];
+		}
+	}
+	dest->moves = src->moves;
+}
+
 void start_game(board* b)
 {
 	empty_board(b);
